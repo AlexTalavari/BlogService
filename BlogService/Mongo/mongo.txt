@@ -1,0 +1,9 @@
+use admin
+db.createUser(
+  {
+    user: "alex",
+    pwd: "ZN5155dM6aL3",
+    roles: [ { role: "root", db: "admin" } ]
+  }
+);
+exit;
