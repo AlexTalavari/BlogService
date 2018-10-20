@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using BlogService.Models;
+using BlogService.DataModels;
 
-namespace BlogService.Abstractions
+namespace BlogService.Abstractions.Repositories
 {
     public interface IPostRepository
     {

@@ -14,7 +14,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BlogService.Abstractions\BlogService.Abstractions.csproj" />
+    <ProjectReference Include="..\BlogService.DataModels\BlogService.DataModels.csproj" />
+    <ProjectReference Include="..\BlogService.Domain\BlogService.Domain.csproj" />
     <ProjectReference Include="..\BlogService\BlogService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ContextTests\" />
+    <Folder Include="ControllerTests\" />
+    <Folder Include="ModelTests\" />
+    <Folder Include="RepositoriesTests\" />
   </ItemGroup>
 
 </Project>

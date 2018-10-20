@@ -5,14 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Mongo\mongo.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Mongo\mongo.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -22,6 +14,12 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.4" />
     <PackageReference Include="MongoDB.Driver" Version="2.7.0" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlogService.Abstractions\BlogService.Abstractions.csproj" />
+    <ProjectReference Include="..\BlogService.DataModels\BlogService.DataModels.csproj" />
+    <ProjectReference Include="..\BlogService.Domain\BlogService.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

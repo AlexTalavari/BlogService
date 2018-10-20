@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using BlogService.Abstractions;
+using BlogService.Abstractions.Repositories;
+using BlogService.DataModels;
 using BlogService.Infastructure;
-using BlogService.Models;
+using BlogService.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogService.Controllers
@@ -65,7 +67,7 @@ namespace BlogService.Controllers
 
         // POST api/Posts - creates a new Post
         [HttpPost]
-        public void Post([FromBody] PostParam newPost)
+        public void Post([FromBody] PostViewModel newPost)
         {
             _postRepository.AddPost(new Post
             {

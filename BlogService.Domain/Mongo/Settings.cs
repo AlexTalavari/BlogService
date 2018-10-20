@@ -1,4 +1,4 @@
-﻿namespace BlogService.Models
+﻿namespace BlogService.Domain.Mongo
 {
     public class Settings
     {

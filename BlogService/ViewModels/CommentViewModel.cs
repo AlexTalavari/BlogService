@@ -1,9 +1,6 @@
-﻿using System.Collections.Generic;
-using MongoDB.Bson;
-
-namespace BlogService.Models
+﻿namespace BlogService.ViewModels
 {
-    public class CommentParam
+    public class CommentViewModel
     {
         public string Body { get; set; } = string.Empty;
 

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Mongo\mongo.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Mongo\mongo.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.1.1" />
+    <PackageReference Include="MongoDB.Driver" Version="2.7.0" />
+    <PackageReference Include="NLog" Version="4.5.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlogService.Abstractions\BlogService.Abstractions.csproj" />
+    <ProjectReference Include="..\BlogService.DataModels\BlogService.DataModels.csproj" />
+  </ItemGroup>
+
+</Project>

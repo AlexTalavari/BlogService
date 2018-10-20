@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using BlogService.Abstractions;
+using BlogService.Abstractions.Repositories;
+using BlogService.DataModels;
 using BlogService.Infastructure;
-using BlogService.Models;
+using BlogService.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogService.Controllers
@@ -44,7 +46,7 @@ namespace BlogService.Controllers
         
         // Comment api/Comments - creates a new Comment
         [HttpPost]
-        public void Comment([FromBody] CommentParam newComment)
+        public void Comment([FromBody] CommentViewModel newComment)
         {
             _commentRepository.AddComment(new Comment
             {
