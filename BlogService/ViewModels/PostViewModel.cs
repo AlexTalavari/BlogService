@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using BlogService.DataModels;
 
-namespace BlogService.Models
+namespace BlogService.ViewModels
 {
-    public class PostParam
+    public class PostViewModel
     {
         public string Body { get; set; } = string.Empty;
         public HeaderImage Header { get; set; } = new HeaderImage();

@@ -1,6 +1,6 @@
 ﻿using MongoDB.Bson;
 
-namespace BlogService.Repositories
+namespace BlogService.Domain.Repositories
 {
     public class BaseMongoRepository
     {

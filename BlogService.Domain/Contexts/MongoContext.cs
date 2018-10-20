@@ -1,4 +1,5 @@
-﻿using BlogService.Models;
+﻿using BlogService.DataModels;
+using BlogService.Domain.Mongo;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 

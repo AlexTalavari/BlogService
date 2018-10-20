@@ -1,4 +1,4 @@
-﻿namespace BlogService.Models
+﻿namespace BlogService.DataModels
 {
     public class HeaderImage
     {

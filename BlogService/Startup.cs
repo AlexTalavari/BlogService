@@ -1,12 +1,13 @@
 ﻿using AspNetCoreRateLimit;
-using BlogService.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using BlogService.Abstractions;
-using BlogService.Repositories;
+using BlogService.Abstractions.Repositories;
+using BlogService.Domain.Mongo;
+using BlogService.Domain.Repositories;
+using BlogService.ViewModels;
 
 namespace BlogService
 {

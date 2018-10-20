@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using BlogService.Abstractions;
+using BlogService.Abstractions.Repositories;
 using BlogService.Contexts;
-using BlogService.Models;
+using BlogService.DataModels;
+using BlogService.Domain.Mongo;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
-namespace BlogService.Repositories
+namespace BlogService.Domain.Repositories
 {
     public class CommentRepository : BaseMongoRepository, ICommentRepository
     {
