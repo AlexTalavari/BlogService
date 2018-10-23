@@ -30,6 +30,13 @@
       "commandName": "Docker",
       "launchBrowser": true,
       "launchUrl": "{Scheme}://localhost:{ServicePort}/api/posts"
+    },
+    "Azure Dev Spaces": {
+      "commandName": "AzureDevSpaces",
+      "launchBrowser": true,
+      "resourceGroup": "BlogServiceKube",
+      "aksName": "MyAKS",
+      "subscriptionId": "acc66ff6-71a9-44ba-8e67-cc79737b06ce"
     }
   }
 }
