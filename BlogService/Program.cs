@@ -21,7 +21,7 @@ namespace BlogService
 
         public static void Main(string[] args)
         {
-            var logger = NLog.Web.NLogBuilder.ConfigureNLog("NLog.config").GetCurrentClassLogger();
+            var logger = NLog.Web.NLogBuilder.ConfigureNLog("./nlog.config").GetCurrentClassLogger();
             try
             {
                 logger.Debug("init main");

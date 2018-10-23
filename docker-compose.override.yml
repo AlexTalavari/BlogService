@@ -9,6 +9,18 @@ services:
     ports:
       - "6213:80"
       - "44383:443"
+    networks:
+      - blogservicenetwork
     volumes:
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+  mongodb:
+    container_name: mongodb
+    image: mongo:latest
+    networks:
+    - blogservicenetwork
+
+networks:
+  blogservicenetwork:
+    driver: bridge
