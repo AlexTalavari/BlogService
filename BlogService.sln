@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogService", "BlogService\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogServiceTests", "BlogServiceTests\BlogServiceTests.csproj", "{733F1A9B-2656-4F59-8B83-1A83BE2F3E4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogService.Domain", "BlogService.Domain\BlogService.Domain.csproj", "{0D96E0FE-DCC4-4334-80EE-ED1B75B4C61E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogService.Domain", "BlogService.Domain\BlogService.Domain.csproj", "{0D96E0FE-DCC4-4334-80EE-ED1B75B4C61E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogService.Abstractions", "BlogService.Abstractions\BlogService.Abstractions.csproj", "{16EE0CDC-CD8F-4F4B-B845-21D2B6778E1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogService.Abstractions", "BlogService.Abstractions\BlogService.Abstractions.csproj", "{16EE0CDC-CD8F-4F4B-B845-21D2B6778E1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogService.DataModels", "BlogService.DataModels\BlogService.DataModels.csproj", "{63BEE17B-6BB3-4489-AFD6-8B860C31CEBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogService.DataModels", "BlogService.DataModels\BlogService.DataModels.csproj", "{63BEE17B-6BB3-4489-AFD6-8B860C31CEBE}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0033F3F5-7745-405B-8970-59E36FB51ABA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{63BEE17B-6BB3-4489-AFD6-8B860C31CEBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63BEE17B-6BB3-4489-AFD6-8B860C31CEBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63BEE17B-6BB3-4489-AFD6-8B860C31CEBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0033F3F5-7745-405B-8970-59E36FB51ABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0033F3F5-7745-405B-8970-59E36FB51ABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0033F3F5-7745-405B-8970-59E36FB51ABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0033F3F5-7745-405B-8970-59E36FB51ABA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

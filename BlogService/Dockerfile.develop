@@ -1,0 +1,18 @@
+FROM microsoft/dotnet:2.1-sdk
+ARG BUILD_CONFIGURATION=Debug
+ENV ASPNETCORE_ENVIRONMENT=Development
+ENV DOTNET_USE_POLLING_FILE_WATCHER=true
+EXPOSE 6213
+
+WORKDIR /src
+COPY ["BlogService.Abstractions/BlogService.Abstractions.csproj", "BlogService.Abstractions/"]
+COPY ["BlogService.DataModels/BlogService.DataModels.csproj", "BlogService.DataModels/"]
+COPY ["BlogService.Domain/BlogService.Domain.csproj", "BlogService.Domain/"]
+COPY ["BlogService/BlogService.csproj", "BlogService/"]
+
+RUN dotnet restore "BlogService/BlogService.csproj"
+COPY . .
+WORKDIR "/src/BlogService"
+RUN dotnet build --no-restore "BlogService.csproj" -c $BUILD_CONFIGURATION
+
+ENTRYPOINT ["dotnet", "run", "--no-restore", "--no-build", "--no-launch-profile", "-c", "$BUILD_CONFIGURATION", "--"]
