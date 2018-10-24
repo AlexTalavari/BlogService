@@ -4,11 +4,9 @@ services:
   blogservice:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=https://+:443;http://+:80
-      - ASPNETCORE_HTTPS_PORT=44383
+      - ASPNETCORE_URLS=http://+:80
     ports:
-      - "6213:80"
-      - "44383:443"
+      - "80:80"
     networks:
       - blogservicenetwork
     volumes:
