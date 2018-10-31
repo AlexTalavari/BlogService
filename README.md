@@ -1,87 +1,47 @@
-# Project Title
+# Blog Service
 
-One Paragraph of project description goes here
+This is a small Blog Service build with ASP.Net Core 2 and Mongo.Provides the basic fuctionality of storing Posts and Comments in Mongo and retreive them as JSON.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Clone the repository and run the Solution. I have included a Dockerfile to deploy it along with Mongo.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+.Net Core 2
+Mongo DB
+Docker if you you are gonna use Docker Compose for Deployment
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+Tests are on the Roadmap. Any help and contributions are welcome.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+- [ASP.Net Core MVC](https://github.com/aspnet/Mvc) - The web framework used
+- [MongoDB](https://www.mongodb.com/) - Database
+- [NLog](https://nlog-project.org/) - Logging
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Feel free to open issues and contribute code.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+Nothing Fancy at the moment. I have not decided how to version the project. Any ideas how to approach it hit me up.
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+- **Alexander Talavari** - [AlexTalavari](https://github.com/AlexTalavari)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the Apache License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+## Roadmap
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+- Mocking MongoDb and adding Tests
+- Intergration of RabbitMQ for a notification system
+- Versioning
